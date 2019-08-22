@@ -25,8 +25,12 @@ class Init
 	public function run($url)
 	{
 		array_walk($this->routes, function($route) use($url){
+			
 			if($url == $route['route']){
-				echo "encontrou!!!";
+				$class = "App\\Controllers\\".ucfirst($route['controller']);
+				$action = $route['action'];
+        		$controller = new $class;
+        		$controller->$action();
 			}
 		});
 	}
