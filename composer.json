@@ -1,13 +1,13 @@
 {
 	"name": "mvc",
-	"require":{
-		"php: ">=5.3"
+	"require": {
+		"php" : ">=7.3"
 	},
-
+      
 	"minimum-stability": "alpha",
 	"authors": [
 		{
-			"name": "Renan"
+			"name": "Renan",
 			"email": "renan.arantes123@gmail.com"
 		}
 	],
