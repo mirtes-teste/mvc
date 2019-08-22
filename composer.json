@@ -1,0 +1,23 @@
+{
+	"name": "mvc",
+	"require":{
+		"php: ">=5.3"
+	},
+
+	"minimum-stability": "alpha",
+	"authors": [
+		{
+			"name": "Renan"
+			"email": "renan.arantes123@gmail.com"
+		}
+	],
+	"autoload":{
+		"psr-0":{
+			"SON" : "vendor",
+			"App" : "/"
+		}
+	},
+	"config":{
+		"bin-dir": "bin"
+	}
+}
