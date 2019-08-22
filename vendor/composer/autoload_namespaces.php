@@ -7,5 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'SON' => array($vendorDir . ''),
-    'App' => array('/'),
+    'App' => array($baseDir.'/'),
 );

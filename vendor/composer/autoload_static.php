@@ -18,7 +18,7 @@ class ComposerStaticInitba3d0b11fdad3d5924a1339e879908b5
         array (
             'App' => 
             array (
-                0 => '/',
+                0 => '../',
             ),
         ),
     );
