@@ -14,6 +14,7 @@ class Index extends Action
 		$artigos = $artigo->fetchAll();
 
 		$this->view->artigos = $artigos;
+		
 		$this->render('index');
 	}
 
