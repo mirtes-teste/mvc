@@ -8,11 +8,11 @@ class Index
 	
 	public function index()
 	{
-		echo "Controller: Index, Action: Index";
+		include '../App/views/index/index.phtml';
 	}
 
 	public function empresa()
 	{
-		echo "Controller: Index, Action: Empresa";
+		include '../App/views/index/empresa.phtml';	
 	}
 }
