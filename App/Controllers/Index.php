@@ -3,22 +3,17 @@
 namespace App\Controllers;
 
 use SON\Controller\Action;
+use \App\Models\Artigo;
 
 class Index extends Action
 {
 	
 	public function index()
 	{
-		
-		$nomes = array();
-		$nomes[] = 'Wesley';
-		$nomes[] = 'João';
+		$artigo = new Artigo(\App\Init::getDb());
+		$artigos = $artigo->fetchAll();
 
-
-		//atribuindo para a view
-		$this->view->nomes = $nomes;
-
-		//renderizando
+		$this->view->artigos = $artigos;
 		$this->render('index');
 	}
 

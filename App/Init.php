@@ -16,4 +16,10 @@ class Init extends Bootstrap
 		$this->setRoutes($ar);
 	}
 
+	public static function getDb()
+	{
+		$db = new \PDO("mysql:host=localhost;dbname=mvc","root","luana123");
+		return $db;
+	}
+
 }
