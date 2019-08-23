@@ -1,20 +1,13 @@
 <?php
 
 namespace App\Models;
+use SON\Db\Table;
 
-class Artigo{
+class Artigo extends Table{
 
-	protected $db;
-
-	public function __construct(\PDO $db)
-	{
-		$this->db = $db;
-	}
-
-	public function fetchAll()
-	{
-		$query = "Select * from artigos";
-		return $this->db->query($query);
-	}
+	protected $table = "artigos";
 
 }
+
+
+
