@@ -3,14 +3,14 @@
 namespace App\Controllers;
 
 use SON\Controller\Action;
-use \App\Models\Artigo;
+use \SON\Di\Container;
 
 class Index extends Action
 {
 	
 	public function index()
 	{
-		$artigo = new Artigo(\App\Init::getDb());
+		$artigo = \SON\Di\Container::getClass("Artigo");
 		$artigos = $artigo->fetchAll();
 
 		$this->view->artigos = $artigos;
